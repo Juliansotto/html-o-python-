@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscripción Escolar</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Inscripción Escolar</h1>
+    </header>
+    <main>
+        <section id="formulario">
+            <h2>Inscribir a mi Hijo</h2>
+            <form id="inscripcionForm">
+                <label for="nombrePadre">Nombre del Padre/Madre:</label>
+                <input type="text" id="nombrePadre" name="nombrePadre" required>
+                <label for="telefono">Teléfono:</label>
+                <input type="tel" id="telefono" name="telefono" required>
+                <label for="nombreHijo">Nombre del Hijo:</label>
+                <input type="text" id="nombreHijo" name="nombreHijo" required>
+                <label for="edad">Edad:</label>
+                <input type="number" id="edad" name="edad" required>
+                <label for="escuela">Escuela:</label>
+                <select id="escuela" name="escuela" required>
+                    <option value="escuela1">Escuela Primaria A</option>
+                    <option value="escuela2">Escuela Primaria B</option>
+                    <option value="escuela3">Escuela Primaria C</option>
+                </select>
+                <button type="submit">Inscribir</button>
+            </form>
+        </section>
+        <section id="lista">
+            <h2>Inscripciones Realizadas</h2>
+            <ul id="inscripcionesList"></ul>
+        </section>
+    </main>
+    <script src="app.js"></script>
+</body>
+</html>

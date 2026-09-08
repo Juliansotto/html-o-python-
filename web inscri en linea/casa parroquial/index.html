@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestión Parroquial</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Gestión Parroquial</h1>
+    </header>
+    <main>
+        <section id="formulario">
+            <h2>Agendar Trámite</h2>
+            <form id="tramiteForm">
+                <label for="tipo">Tipo de Trámite:</label>
+                <select id="tipo" name="tipo">
+                    <option value="bautismo">Bautismo</option>
+                    <option value="boda">Boda</option>
+                    <option value="responso">Responso</option>
+                </select>
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+                <label for="fecha">Fecha:</label>
+                <input type="date" id="fecha" name="fecha" required>
+                <button type="submit">Agendar</button>
+            </form>
+        </section>
+        <section id="lista">
+            <h2>Trámites Agendados</h2>
+            <ul id="tramitesList"></ul>
+        </section>
+    </main>
+    <script src="app.js"></script>
+</body>
+</html>
